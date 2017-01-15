@@ -1,0 +1,653 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C01FE891E2379CA00D8FDA6 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C01FE881E2379CA00D8FDA6 /* UIImage+Extension.swift */; };
+		8C07D20E1E20F16E007DFDD4 /* ReaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C07D20D1E20F16E007DFDD4 /* ReaderCell.swift */; };
+		8C07D2101E20F5C4007DFDD4 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C07D20F1E20F5C4007DFDD4 /* UIViewExtension.swift */; };
+		8C07D2121E20F8CD007DFDD4 /* CellLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C07D2111E20F8CD007DFDD4 /* CellLayout.swift */; };
+		8C134A081E20BD38004D530B /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C134A071E20BD38004D530B /* ReusableView.swift */; };
+		8C134A0A1E20BEC4004D530B /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C134A091E20BEC4004D530B /* UITableViewExtension.swift */; };
+		8C6296551E24C6EC00B2C628 /* AsynLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6296541E24C6EC00B2C628 /* AsynLabel.swift */; };
+		8CA373F01E2774FA00542BD2 /* AsyncView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA373EF1E2774FA00542BD2 /* AsyncView.swift */; };
+		8CCB618C1E208DCA00D02D6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCB618B1E208DCA00D02D6D /* AppDelegate.swift */; };
+		8CCB618E1E208DCA00D02D6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCB618D1E208DCA00D02D6D /* ViewController.swift */; };
+		8CCB61911E208DCA00D02D6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CCB618F1E208DCA00D02D6D /* Main.storyboard */; };
+		8CCB61931E208DCA00D02D6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CCB61921E208DCA00D02D6D /* Assets.xcassets */; };
+		8CCB61961E208DCA00D02D6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CCB61941E208DCA00D02D6D /* LaunchScreen.storyboard */; };
+		8CCB61A11E208DCA00D02D6D /* SmartisanReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCB61A01E208DCA00D02D6D /* SmartisanReaderTests.swift */; };
+		8CCB61AC1E208DCA00D02D6D /* SmartisanReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCB61AB1E208DCA00D02D6D /* SmartisanReaderUITests.swift */; };
+		8CFD67241E2230F50082BCC5 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFD67231E2230F50082BCC5 /* String+Extension.swift */; };
+		CB750E744ABBB40B253FCFDA /* Pods_SmartisanReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FB50A041A0D345EAFB64698 /* Pods_SmartisanReader.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8CCB619D1E208DCA00D02D6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CCB61801E208DC900D02D6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CCB61871E208DC900D02D6D;
+			remoteInfo = SmartisanReader;
+		};
+		8CCB61A81E208DCA00D02D6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CCB61801E208DC900D02D6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CCB61871E208DC900D02D6D;
+			remoteInfo = SmartisanReader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		31E9AB26886B9A5880FCFA82 /* Pods-SmartisanReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartisanReader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartisanReader/Pods-SmartisanReader.debug.xcconfig"; sourceTree = "<group>"; };
+		5FB50A041A0D345EAFB64698 /* Pods_SmartisanReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartisanReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C01FE881E2379CA00D8FDA6 /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		8C07D20D1E20F16E007DFDD4 /* ReaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderCell.swift; sourceTree = "<group>"; };
+		8C07D20F1E20F5C4007DFDD4 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		8C07D2111E20F8CD007DFDD4 /* CellLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellLayout.swift; sourceTree = "<group>"; };
+		8C134A071E20BD38004D530B /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		8C134A091E20BEC4004D530B /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		8C6296541E24C6EC00B2C628 /* AsynLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsynLabel.swift; sourceTree = "<group>"; };
+		8CA373EF1E2774FA00542BD2 /* AsyncView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncView.swift; sourceTree = "<group>"; };
+		8CCB61881E208DCA00D02D6D /* SmartisanReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartisanReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CCB618B1E208DCA00D02D6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8CCB618D1E208DCA00D02D6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8CCB61901E208DCA00D02D6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8CCB61921E208DCA00D02D6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8CCB61951E208DCA00D02D6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8CCB61971E208DCA00D02D6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CCB619C1E208DCA00D02D6D /* SmartisanReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartisanReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CCB61A01E208DCA00D02D6D /* SmartisanReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartisanReaderTests.swift; sourceTree = "<group>"; };
+		8CCB61A21E208DCA00D02D6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CCB61A71E208DCA00D02D6D /* SmartisanReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartisanReaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CCB61AB1E208DCA00D02D6D /* SmartisanReaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartisanReaderUITests.swift; sourceTree = "<group>"; };
+		8CCB61AD1E208DCA00D02D6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CFD67231E2230F50082BCC5 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		C6CB3B5FA659FE691905A4E5 /* Pods-SmartisanReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartisanReader.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartisanReader/Pods-SmartisanReader.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8CCB61851E208DC900D02D6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB750E744ABBB40B253FCFDA /* Pods_SmartisanReader.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CCB61991E208DCA00D02D6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CCB61A41E208DCA00D02D6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16908CF0D4B185516A3AA5BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FB50A041A0D345EAFB64698 /* Pods_SmartisanReader.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8CCB617F1E208DC900D02D6D = {
+			isa = PBXGroup;
+			children = (
+				8CCB618A1E208DCA00D02D6D /* SmartisanReader */,
+				8CCB619F1E208DCA00D02D6D /* SmartisanReaderTests */,
+				8CCB61AA1E208DCA00D02D6D /* SmartisanReaderUITests */,
+				8CCB61891E208DCA00D02D6D /* Products */,
+				C03BA005653CA9E8472E311F /* Pods */,
+				16908CF0D4B185516A3AA5BB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8CCB61891E208DCA00D02D6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8CCB61881E208DCA00D02D6D /* SmartisanReader.app */,
+				8CCB619C1E208DCA00D02D6D /* SmartisanReaderTests.xctest */,
+				8CCB61A71E208DCA00D02D6D /* SmartisanReaderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8CCB618A1E208DCA00D02D6D /* SmartisanReader */ = {
+			isa = PBXGroup;
+			children = (
+				8CFD67221E2230BD0082BCC5 /* Extension */,
+				8CCB618B1E208DCA00D02D6D /* AppDelegate.swift */,
+				8CCB618D1E208DCA00D02D6D /* ViewController.swift */,
+				8C6296541E24C6EC00B2C628 /* AsynLabel.swift */,
+				8C07D20D1E20F16E007DFDD4 /* ReaderCell.swift */,
+				8CA373EF1E2774FA00542BD2 /* AsyncView.swift */,
+				8C07D2111E20F8CD007DFDD4 /* CellLayout.swift */,
+				8C134A071E20BD38004D530B /* ReusableView.swift */,
+				8CCB618F1E208DCA00D02D6D /* Main.storyboard */,
+				8CCB61921E208DCA00D02D6D /* Assets.xcassets */,
+				8CCB61941E208DCA00D02D6D /* LaunchScreen.storyboard */,
+				8CCB61971E208DCA00D02D6D /* Info.plist */,
+			);
+			path = SmartisanReader;
+			sourceTree = "<group>";
+		};
+		8CCB619F1E208DCA00D02D6D /* SmartisanReaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				8CCB61A01E208DCA00D02D6D /* SmartisanReaderTests.swift */,
+				8CCB61A21E208DCA00D02D6D /* Info.plist */,
+			);
+			path = SmartisanReaderTests;
+			sourceTree = "<group>";
+		};
+		8CCB61AA1E208DCA00D02D6D /* SmartisanReaderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8CCB61AB1E208DCA00D02D6D /* SmartisanReaderUITests.swift */,
+				8CCB61AD1E208DCA00D02D6D /* Info.plist */,
+			);
+			path = SmartisanReaderUITests;
+			sourceTree = "<group>";
+		};
+		8CFD67221E2230BD0082BCC5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8C134A091E20BEC4004D530B /* UITableViewExtension.swift */,
+				8C07D20F1E20F5C4007DFDD4 /* UIViewExtension.swift */,
+				8CFD67231E2230F50082BCC5 /* String+Extension.swift */,
+				8C01FE881E2379CA00D8FDA6 /* UIImage+Extension.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		C03BA005653CA9E8472E311F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				31E9AB26886B9A5880FCFA82 /* Pods-SmartisanReader.debug.xcconfig */,
+				C6CB3B5FA659FE691905A4E5 /* Pods-SmartisanReader.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8CCB61871E208DC900D02D6D /* SmartisanReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CCB61B01E208DCA00D02D6D /* Build configuration list for PBXNativeTarget "SmartisanReader" */;
+			buildPhases = (
+				92CD12BCBF2A053F21D6D497 /* [CP] Check Pods Manifest.lock */,
+				8CCB61841E208DC900D02D6D /* Sources */,
+				8CCB61851E208DC900D02D6D /* Frameworks */,
+				8CCB61861E208DC900D02D6D /* Resources */,
+				C6331E355DCBDFC51DCB0ECC /* [CP] Embed Pods Frameworks */,
+				676A0C63BA1728E8A1C43607 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartisanReader;
+			productName = SmartisanReader;
+			productReference = 8CCB61881E208DCA00D02D6D /* SmartisanReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8CCB619B1E208DCA00D02D6D /* SmartisanReaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CCB61B31E208DCA00D02D6D /* Build configuration list for PBXNativeTarget "SmartisanReaderTests" */;
+			buildPhases = (
+				8CCB61981E208DCA00D02D6D /* Sources */,
+				8CCB61991E208DCA00D02D6D /* Frameworks */,
+				8CCB619A1E208DCA00D02D6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8CCB619E1E208DCA00D02D6D /* PBXTargetDependency */,
+			);
+			name = SmartisanReaderTests;
+			productName = SmartisanReaderTests;
+			productReference = 8CCB619C1E208DCA00D02D6D /* SmartisanReaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8CCB61A61E208DCA00D02D6D /* SmartisanReaderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CCB61B61E208DCA00D02D6D /* Build configuration list for PBXNativeTarget "SmartisanReaderUITests" */;
+			buildPhases = (
+				8CCB61A31E208DCA00D02D6D /* Sources */,
+				8CCB61A41E208DCA00D02D6D /* Frameworks */,
+				8CCB61A51E208DCA00D02D6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8CCB61A91E208DCA00D02D6D /* PBXTargetDependency */,
+			);
+			name = SmartisanReaderUITests;
+			productName = SmartisanReaderUITests;
+			productReference = 8CCB61A71E208DCA00D02D6D /* SmartisanReaderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8CCB61801E208DC900D02D6D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = sunshine;
+				TargetAttributes = {
+					8CCB61871E208DC900D02D6D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 86RWA7ZX6L;
+						ProvisioningStyle = Automatic;
+					};
+					8CCB619B1E208DCA00D02D6D = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8CCB61871E208DC900D02D6D;
+					};
+					8CCB61A61E208DCA00D02D6D = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8CCB61871E208DC900D02D6D;
+					};
+				};
+			};
+			buildConfigurationList = 8CCB61831E208DC900D02D6D /* Build configuration list for PBXProject "SmartisanReader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8CCB617F1E208DC900D02D6D;
+			productRefGroup = 8CCB61891E208DCA00D02D6D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8CCB61871E208DC900D02D6D /* SmartisanReader */,
+				8CCB619B1E208DCA00D02D6D /* SmartisanReaderTests */,
+				8CCB61A61E208DCA00D02D6D /* SmartisanReaderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8CCB61861E208DC900D02D6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CCB61961E208DCA00D02D6D /* LaunchScreen.storyboard in Resources */,
+				8CCB61931E208DCA00D02D6D /* Assets.xcassets in Resources */,
+				8CCB61911E208DCA00D02D6D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CCB619A1E208DCA00D02D6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CCB61A51E208DCA00D02D6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		676A0C63BA1728E8A1C43607 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartisanReader/Pods-SmartisanReader-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92CD12BCBF2A053F21D6D497 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C6331E355DCBDFC51DCB0ECC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartisanReader/Pods-SmartisanReader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8CCB61841E208DC900D02D6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CFD67241E2230F50082BCC5 /* String+Extension.swift in Sources */,
+				8C6296551E24C6EC00B2C628 /* AsynLabel.swift in Sources */,
+				8C07D2101E20F5C4007DFDD4 /* UIViewExtension.swift in Sources */,
+				8C134A081E20BD38004D530B /* ReusableView.swift in Sources */,
+				8C01FE891E2379CA00D8FDA6 /* UIImage+Extension.swift in Sources */,
+				8CCB618E1E208DCA00D02D6D /* ViewController.swift in Sources */,
+				8C07D20E1E20F16E007DFDD4 /* ReaderCell.swift in Sources */,
+				8CA373F01E2774FA00542BD2 /* AsyncView.swift in Sources */,
+				8C07D2121E20F8CD007DFDD4 /* CellLayout.swift in Sources */,
+				8CCB618C1E208DCA00D02D6D /* AppDelegate.swift in Sources */,
+				8C134A0A1E20BEC4004D530B /* UITableViewExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CCB61981E208DCA00D02D6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CCB61A11E208DCA00D02D6D /* SmartisanReaderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CCB61A31E208DCA00D02D6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CCB61AC1E208DCA00D02D6D /* SmartisanReaderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8CCB619E1E208DCA00D02D6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8CCB61871E208DC900D02D6D /* SmartisanReader */;
+			targetProxy = 8CCB619D1E208DCA00D02D6D /* PBXContainerItemProxy */;
+		};
+		8CCB61A91E208DCA00D02D6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8CCB61871E208DC900D02D6D /* SmartisanReader */;
+			targetProxy = 8CCB61A81E208DCA00D02D6D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8CCB618F1E208DCA00D02D6D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CCB61901E208DCA00D02D6D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8CCB61941E208DCA00D02D6D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CCB61951E208DCA00D02D6D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8CCB61AE1E208DCA00D02D6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8CCB61AF1E208DCA00D02D6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8CCB61B11E208DCA00D02D6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31E9AB26886B9A5880FCFA82 /* Pods-SmartisanReader.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 86RWA7ZX6L;
+				INFOPLIST_FILE = SmartisanReader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunshine.SmartisanReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8CCB61B21E208DCA00D02D6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6CB3B5FA659FE691905A4E5 /* Pods-SmartisanReader.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 86RWA7ZX6L;
+				INFOPLIST_FILE = SmartisanReader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunshine.SmartisanReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		8CCB61B41E208DCA00D02D6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SmartisanReaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunshine.SmartisanReaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartisanReader.app/SmartisanReader";
+			};
+			name = Debug;
+		};
+		8CCB61B51E208DCA00D02D6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SmartisanReaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunshine.SmartisanReaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartisanReader.app/SmartisanReader";
+			};
+			name = Release;
+		};
+		8CCB61B71E208DCA00D02D6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = SmartisanReaderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunshine.SmartisanReaderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SmartisanReader;
+			};
+			name = Debug;
+		};
+		8CCB61B81E208DCA00D02D6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = SmartisanReaderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunshine.SmartisanReaderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SmartisanReader;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8CCB61831E208DC900D02D6D /* Build configuration list for PBXProject "SmartisanReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CCB61AE1E208DCA00D02D6D /* Debug */,
+				8CCB61AF1E208DCA00D02D6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CCB61B01E208DCA00D02D6D /* Build configuration list for PBXNativeTarget "SmartisanReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CCB61B11E208DCA00D02D6D /* Debug */,
+				8CCB61B21E208DCA00D02D6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CCB61B31E208DCA00D02D6D /* Build configuration list for PBXNativeTarget "SmartisanReaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CCB61B41E208DCA00D02D6D /* Debug */,
+				8CCB61B51E208DCA00D02D6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CCB61B61E208DCA00D02D6D /* Build configuration list for PBXNativeTarget "SmartisanReaderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CCB61B71E208DCA00D02D6D /* Debug */,
+				8CCB61B81E208DCA00D02D6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8CCB61801E208DC900D02D6D /* Project object */;
+}
