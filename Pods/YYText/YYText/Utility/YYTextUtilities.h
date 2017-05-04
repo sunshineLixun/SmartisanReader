@@ -290,7 +290,7 @@ static inline CGFloat YYTextCGAffineTransformGetTranslateY(CGAffineTransform tra
  
  @see http://stackoverflow.com/questions/13291796/calculate-values-for-a-cgaffinetransform-from-three-points-in-each-of-two-uiview
  */
-CGAffineTransform YYTextCGAffineTransformGetFromPoints(CGPoint before[3], CGPoint after[3]);
+CGAffineTransform YYTextCGAffineTransformGetFromPoints(CGPoint before[_Nonnull 3], CGPoint after[_Nullable 3]);
 
 /// Get the transform which can converts a point from the coordinate system of a given view to another.
 CGAffineTransform YYTextCGAffineTransformGetFromViews(UIView *from, UIView *to);
@@ -319,12 +319,12 @@ NSString *YYTextUIViewContentModeToCAGravity(UIViewContentMode contentMode);
 /**
  Returns a rectangle to fit the @param rect with specified content mode.
  
- @param rect The constrant rect
- @param size The content size
- @param mode The content mode
+
  @return A rectangle for the given content mode.
  @discussion UIViewContentModeRedraw is same as UIViewContentModeScaleToFill.
  */
+
+
 CGRect YYTextCGRectFitWithContentMode(CGRect rect, CGSize size, UIViewContentMode mode);
 
 /// Returns the center for the rectangle.

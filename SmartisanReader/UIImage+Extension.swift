@@ -17,10 +17,15 @@ extension UIImage {
                 context.interpolationQuality = .high
                 let flipVertical = CGAffineTransform(a: 1, b: 0, c: 0, d: -1, tx: 0, ty: targetSize.height)
                 context.concatenate(flipVertical)
+                context.saveGState()
                 context.draw(self.cgImage!, in: newRect)
-                let newImage = UIImage(cgImage: context.makeImage()!)
+                context.restoreGState()
+                let newImage = UIGraphicsGetImageFromCurrentImageContext()
                 UIGraphicsEndImageContext()
-               return newImage
+                if let newImage = newImage {
+                    return newImage
+                }
+                return nil
             }
         return nil
     }
@@ -36,11 +41,15 @@ extension UIImageView {
                 context.interpolationQuality = .high
                 let flipVertical = CGAffineTransform(a: 1, b: 0, c: 0, d: -1, tx: 0, ty: targetSize.height)
                 context.concatenate(flipVertical)
+                context.saveGState()
                 context.draw(image.cgImage!, in: newRect)
-                let newImage = UIImage(cgImage: context.makeImage()!)
+                context.restoreGState()
+                let newImage = UIGraphicsGetImageFromCurrentImageContext()
                 UIGraphicsEndImageContext()
                 DispatchQueue.main.async {
-                    self.layer.contents = newImage.cgImage
+                    if let newImage = newImage{
+                        self.layer.contents = newImage.cgImage
+                    }
                 }
             }
         }
