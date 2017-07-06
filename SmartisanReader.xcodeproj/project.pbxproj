@@ -13,6 +13,7 @@
 		8C07D2121E20F8CD007DFDD4 /* CellLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C07D2111E20F8CD007DFDD4 /* CellLayout.swift */; };
 		8C134A081E20BD38004D530B /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C134A071E20BD38004D530B /* ReusableView.swift */; };
 		8C134A0A1E20BEC4004D530B /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C134A091E20BEC4004D530B /* UITableViewExtension.swift */; };
+		8C1BF75D1F0DDF7F000551BD /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1BF75C1F0DDF7F000551BD /* RequestManager.swift */; };
 		8C6296551E24C6EC00B2C628 /* AsynLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6296541E24C6EC00B2C628 /* AsynLabel.swift */; };
 		8CA373F01E2774FA00542BD2 /* AsyncView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA373EF1E2774FA00542BD2 /* AsyncView.swift */; };
 		8CCB618C1E208DCA00D02D6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCB618B1E208DCA00D02D6D /* AppDelegate.swift */; };
@@ -52,6 +53,7 @@
 		8C07D2111E20F8CD007DFDD4 /* CellLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellLayout.swift; sourceTree = "<group>"; };
 		8C134A071E20BD38004D530B /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		8C134A091E20BEC4004D530B /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		8C1BF75C1F0DDF7F000551BD /* RequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 		8C6296541E24C6EC00B2C628 /* AsynLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsynLabel.swift; sourceTree = "<group>"; };
 		8CA373EF1E2774FA00542BD2 /* AsyncView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncView.swift; sourceTree = "<group>"; };
 		8CCB61881E208DCA00D02D6D /* SmartisanReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartisanReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +107,33 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8C1BF7591F0DDECA000551BD /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				8C1BF75C1F0DDF7F000551BD /* RequestManager.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		8C1BF75A1F0DDED6000551BD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8C6296541E24C6EC00B2C628 /* AsynLabel.swift */,
+				8C07D20D1E20F16E007DFDD4 /* ReaderCell.swift */,
+				8CA373EF1E2774FA00542BD2 /* AsyncView.swift */,
+				8C134A071E20BD38004D530B /* ReusableView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8C1BF75B1F0DDEDA000551BD /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				8C07D2111E20F8CD007DFDD4 /* CellLayout.swift */,
+			);
+			name = Layout;
+			sourceTree = "<group>";
+		};
 		8CCB617F1E208DC900D02D6D = {
 			isa = PBXGroup;
 			children = (
@@ -130,14 +159,12 @@
 		8CCB618A1E208DCA00D02D6D /* SmartisanReader */ = {
 			isa = PBXGroup;
 			children = (
+				8C1BF75B1F0DDEDA000551BD /* Layout */,
+				8C1BF75A1F0DDED6000551BD /* View */,
+				8C1BF7591F0DDECA000551BD /* Service */,
 				8CFD67221E2230BD0082BCC5 /* Extension */,
 				8CCB618B1E208DCA00D02D6D /* AppDelegate.swift */,
 				8CCB618D1E208DCA00D02D6D /* ViewController.swift */,
-				8C6296541E24C6EC00B2C628 /* AsynLabel.swift */,
-				8C07D20D1E20F16E007DFDD4 /* ReaderCell.swift */,
-				8CA373EF1E2774FA00542BD2 /* AsyncView.swift */,
-				8C07D2111E20F8CD007DFDD4 /* CellLayout.swift */,
-				8C134A071E20BD38004D530B /* ReusableView.swift */,
 				8CCB618F1E208DCA00D02D6D /* Main.storyboard */,
 				8CCB61921E208DCA00D02D6D /* Assets.xcassets */,
 				8CCB61941E208DCA00D02D6D /* LaunchScreen.storyboard */,
@@ -373,6 +400,7 @@
 				8CFD67241E2230F50082BCC5 /* String+Extension.swift in Sources */,
 				8C6296551E24C6EC00B2C628 /* AsynLabel.swift in Sources */,
 				8C07D2101E20F5C4007DFDD4 /* UIViewExtension.swift in Sources */,
+				8C1BF75D1F0DDF7F000551BD /* RequestManager.swift in Sources */,
 				8C134A081E20BD38004D530B /* ReusableView.swift in Sources */,
 				8C01FE891E2379CA00D8FDA6 /* UIImage+Extension.swift in Sources */,
 				8CCB618E1E208DCA00D02D6D /* ViewController.swift in Sources */,

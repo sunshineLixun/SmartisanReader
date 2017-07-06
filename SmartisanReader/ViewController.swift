@@ -29,41 +29,36 @@ class ViewController: UITableViewController {
         indicator.layer.cornerRadius = 6.0
         indicator.layer.masksToBounds = true
         self.view.addSubview(indicator)
-        
-        
-        Alamofire.request("http://reader.smartisan.com/index.php?r=visitor/getList&offset=0&page_size=20&site_ids=1").validate().responseJSON { (response) in
-            switch response.result{
-            case .success(let value):
-                let json = JSON(value)
-                let array = json["data","list"]
-                print(array);
-                DispatchQueue.global().async(execute: {
-                    for(_, subJson) in array{
-                        let cellModel = CellModel.init(subJson)
-                        let cellLayout = CellLayout.init(cellModel)
-                        self.layouts.append(cellLayout)
-                    }
-                    DispatchQueue.main.async {
-                        indicator.stopAnimating()
-                        self.tableView.reloadData()
-                    }
-               })
-            case .failure(let error):
-                indicator.stopAnimating()
-                print("Error:\(error)")
-            }
-        }
+		
+		
+		MessageRequest.init().requestStart(completion: { json in
+			let json = JSON(json)
+			let array = json["data","list"]
+			print(array);
+			DispatchQueue.global().async(execute: {
+				for(_, subJson) in array{
+					let cellModel = CellModel.init(subJson)
+					let cellLayout = CellLayout.init(cellModel)
+					self.layouts.append(cellLayout)
+				}
+				DispatchQueue.main.async {
+					indicator.stopAnimating()
+					self.tableView.reloadData()
+				}
+			})
+		})
+		
     }
 }
 
 
 extension ViewController{
-    
+	
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return layouts.count
     }
-    
-    
+	
+	
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.lx_dequeueReusableCell(forIndexPath: indexPath) as ReaderCell
         cell.setLayout(layouts[indexPath.row])
